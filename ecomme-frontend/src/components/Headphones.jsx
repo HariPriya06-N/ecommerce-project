@@ -8,7 +8,7 @@ const Headphones = () => {
   const [headphones, setHeadphones] = useState([]);
 
   const getHeadphones = async () => {
-    const { data } = await axios.get("https://ecomme-backend-production.up.railway.app/headphones");
+    const { data } = await axios.get("http://localhost:5001/headphones");
     setHeadphones(data);
   };
 

@@ -8,7 +8,7 @@ const Mobiles = () => {
   const [mobiles, setMobiles] = useState([]);
 
   const getMobiles = async () => {
-    const { data } = await axios.get("https://ecomme-backend-production.up.railway.app/mobiles");
+    const { data } = await axios.get("http://localhost:5001/mobiles");
     setMobiles(data);
   };
 
