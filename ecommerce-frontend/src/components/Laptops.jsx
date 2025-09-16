@@ -8,7 +8,7 @@ const Laptops = () => {
   const [laptops, setLaptops] = useState([]);
 
   const getLaptops = async () => {
-    const { data } = await axios.get(`${process.env.REACT_APP_API_URL}/laptops`);
+    const { data } = await axios.get(`http://ecommerce-backend-env.eba-mkq5edhd.ap-southeast-2.elasticbeanstalk.com/laptops`);
     setLaptops(data);
   };
 

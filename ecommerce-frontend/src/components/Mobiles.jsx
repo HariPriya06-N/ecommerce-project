@@ -8,7 +8,7 @@ const Mobiles = () => {
   const [mobiles, setMobiles] = useState([]);
 
   const getMobiles = async () => {
-    const { data } = await axios.get(`${process.env.REACT_APP_API_URL}/mobiles`);
+    const { data } = await axios.get(`http://ecommerce-backend-env.eba-mkq5edhd.ap-southeast-2.elasticbeanstalk.com/mobiles`);
     setMobiles(data);
   };
 

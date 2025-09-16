@@ -8,7 +8,7 @@ const Headphones = () => {
   const [headphones, setHeadphones] = useState([]);
 
   const getHeadphones = async () => {
-    const { data } = await axios.get(`${process.env.REACT_APP_API_URL}/headphones`);
+    const { data } = await axios.get(`http://ecommerce-backend-env.eba-mkq5edhd.ap-southeast-2.elasticbeanstalk.com/headphones`);
     setHeadphones(data);
   };
 
