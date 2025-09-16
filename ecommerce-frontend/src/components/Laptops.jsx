@@ -8,7 +8,7 @@ const Laptops = () => {
   const [laptops, setLaptops] = useState([]);
 
   const getLaptops = async () => {
-    const { data } = await axios.get("${process.env.REACT_APP_API_URL}/laptops");
+    const { data } = await axios.get("${REACT_APP_API_URL}/laptops");
     setLaptops(data);
   };
 
