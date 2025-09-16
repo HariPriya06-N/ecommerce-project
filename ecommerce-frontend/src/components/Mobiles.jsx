@@ -8,7 +8,7 @@ const Mobiles = () => {
   const [mobiles, setMobiles] = useState([]);
 
   const getMobiles = async () => {
-    const { data } = await axios.get("${.REACT_APP_API_URL}/mobiles");
+    const { data } = await axios.get(`${process.env.REACT_APP_API_URL}/mobiles`);
     setMobiles(data);
   };
 
